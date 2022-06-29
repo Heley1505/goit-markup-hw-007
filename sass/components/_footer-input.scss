@@ -1,16 +1,17 @@
-.application__subtitle {
-    margin-bottom: 20px;
-}
-.application{
+.application {
     display: flex;
     width: 570;
-}
 
-.application__field {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 0;
+    &__subtitle {
+        margin-bottom: 20px;
+    }
+
+    &__field {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+    }
 }
 
 .signup {
@@ -30,22 +31,26 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+        border-color: var(--accent-color);
+    }
+
+    &__icon {
+        margin-left: 10px;
+    }
+
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
 
-.signup:focus,
-.signup:hover {
-    border-color: var(--accent-color);
-}
-
-.signup::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    align-items: center;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.signup__button {
+&__button {
     cursor: pointer;
     color: var(--main-theme-color);
     background-color: var(--accent-color);
@@ -66,13 +71,9 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.signup__button:focus,
-.signup__button:hover {
-    background-color: var(--bottom-focuse-color);
-}
-
-.singup__icon {
-    margin-left: 10px;
+    &:focus,
+    &:hover {
+        background-color: var(--bottom-focuse-color);
+    }
 }

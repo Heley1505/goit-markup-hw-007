@@ -8,18 +8,18 @@
     outline: none;
     resize: none;
     transition: border-color 250ms var(--transition-timing-function);
-}
 
-.comment:focus,
-.comment:hover {
-    border-color: var(--accent-color);
-}
+    &:focus,
+    &:hover {
+        border-color: var(--accent-color);
+    }
 
-.comment::placeholder {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-    color: rgba(117, 117, 117, 0.5);
+    &::placeholder {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+        color: rgba(117, 117, 117, 0.5);
+    }
 }

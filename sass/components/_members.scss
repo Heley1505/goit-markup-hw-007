@@ -1,0 +1,39 @@
+.members {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__content {
+        background-color: var(--main-theme-color);
+        box-shadow: 0px 4px 4px 0px #00000040;
+        border-radius: 0px 0px 4px 4px;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    &__info {
+        padding: 30px 10px;
+        text-align: center;
+        border-bottom: 1px solid var(--project-conteiner-color);
+
+    }
+
+    &__name {
+        color: var(--title-text-color);
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.9;
+        margin-bottom: 10px;
+    }
+
+    &__position {
+        color: var(--primary-text-color);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.9;
+        margin-bottom: 16px;
+    }
+}

@@ -1,0 +1,13 @@
+.filtr__list {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.filtr__item {
+    display: block;
+ &:not(:last-child) {
+        margin-right: 8px;
+    }
+}

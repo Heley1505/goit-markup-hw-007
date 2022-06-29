@@ -7,22 +7,22 @@
     outline: none;
     cursor: pointer;
     transition: border-color 250ms var(--transition-timing-function);
-}
 
-.input:focus,
-.input:hover {
-    border-color: var(--accent-color);
-}
+    &:focus,
+    &:hover {
+        border-color: var(--accent-color);
 
-.input__icon {
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: fill 250ms var(--transition-timing-function);
-}
+        &+.input__icon,
+        &+.input__icon {
+            fill: var(--accent-color);
+        }
+    }
 
-.input:focus+.input__icon,
-.input:hover+.input__icon {
-    fill: var(--accent-color);
+    &__icon {
+        position: absolute;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: fill 250ms var(--transition-timing-function);
+    }
 }

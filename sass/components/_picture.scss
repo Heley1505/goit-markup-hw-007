@@ -1,0 +1,21 @@
+.picture {
+    position: relative;
+    overflow: hidden;
+    &__tittle {
+        color: var(--title-text-color);
+        font-size: 18px;
+        line-height: 2;
+        margin-bottom: 4px;
+    }
+    &__info {
+        padding: 20px 24px;
+        border: 1px solid var(--project-conteiner-color);
+        border-top: none;
+    }
+    &_type {
+        color: var(--primary-text-color);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.9;
+    }
+}

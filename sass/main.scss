@@ -3,26 +3,36 @@
 @import './base/container';
 @import './base/common';
 @import './base/hidden';
+@import './components/buttons';
 
 @import './components/header';
 @import './components/logo';
+@import './components/nav';
+@import './components/connects';
 @import './components/hero';
 @import './components/feature';
 @import './components/special';
 @import './components/services';
 @import './components/team';
+@import './components/members';
 @import './components/team-social';
 @import './components/clients';
+@import './components/brand';
+@import './components/footer';
 @import './components/adress';
+@import './components/contacts';
 @import './components/footer-social';
 @import './components/footer-input';
-@import './components/portfolio';
 @import './components/backdrop';
 @import './components/modal';
 @import './components/form';
 @import './components/input';
 @import './components/comment';
 @import './components/checkbox';
-@import './components/buttons';
 
+
+@import './components/filtr';
+@import './components/projects';
+@import './components/picture';
+@import './components/layer';
 
