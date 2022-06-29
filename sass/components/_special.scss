@@ -1,0 +1,39 @@
+.special {
+    background-color: var(--main-theme-color);
+    display: flex;
+}
+
+.special__title {
+    color: var(--title-text-color);
+    margin-bottom: 10px;
+}
+
+
+.special__info {
+    color: var(--primary-text-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.special__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.special__item {
+    width: 270px;
+}
+
+.special__content {
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    display: flex;
+    background-color: var(--botton--bg-color);
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+
+}
