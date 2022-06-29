@@ -79,8 +79,14 @@ body {
   text-transform: uppercase;
 }
 
-.features__title {
-  margin-bottom: 50px;
+.subtitle {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--main-theme-color);
+  letter-spacing: 0.03em;
 }
 
 .visually-hidden {
@@ -564,32 +570,26 @@ address {
   color: var(--accent-color);
 }
 
-.footer-social-list {
+.footer__social {
   margin-right: auto;
 }
 
-.soc-item:not(:last-child) {
+.footer-social__subtitle {
+  margin-bottom: 20px;
+}
+
+.socials__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-title {
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  color: var(--main-theme-color);
-  letter-spacing: 0.03em;
-}
-
-.footer-soc-links {
+.socials {
   display: flex;
   text-decoration: none;
   align-items: center;
   justify-content: center;
 }
 
-.soc-item-link {
+.socials__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -604,12 +604,12 @@ address {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.soc-item-link:hover,
-.soc-item-link:focus {
+.socials__link:hover,
+.socials__link:focus {
   background-color: var(--accent-color);
 }
 
-.footer-icon {
+.socials__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -969,20 +969,23 @@ body {
   background-color: var(--bottom-focuse-color);
 }
 
-.signup-form-footer {
-  display: flex;
-  width: 570;
-  /* margin-right: 0; */
+.application__subtitle {
+  margin-bottom: 20px;
 }
 
-.footer-sign-field {
+.application {
+  display: flex;
+  width: 570;
+}
+
+.application__field {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 0;
 }
 
-.sign-upinput {
+.signup {
   width: 358px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3019607843);
@@ -1001,12 +1004,12 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.sign-upinput:focus,
-.sign-upinput:hover {
+.signup:focus,
+.signup:hover {
   border-color: var(--accent-color);
 }
 
-.sign-upinput::placeholder {
+.signup::placeholder {
   font-size: 16px;
   line-height: 1.25;
   align-items: center;
@@ -1014,7 +1017,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.signup-footer-button {
+.signup__button {
   cursor: pointer;
   color: var(--main-theme-color);
   background-color: var(--accent-color);
@@ -1037,22 +1040,11 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.signup-footer-button:focus,
-.signup-footer-button:hover {
+.signup__button:focus,
+.signup__button:hover {
   background-color: var(--bottom-focuse-color);
 }
 
-.singup-footer-icon {
+.singup__icon {
   margin-left: 10px;
-}
-
-.apply {
-  display: block;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  color: var(--main-theme-color);
-  letter-spacing: 0.03em;
 }/*# sourceMappingURL=main.css.map */
