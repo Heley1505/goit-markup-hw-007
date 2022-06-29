@@ -1,0 +1,28 @@
+.input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #21212133;
+    border-radius: 4px;
+    padding-left: 42px;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 250ms var(--transition-timing-function);
+}
+
+.input:focus,
+.input:hover {
+    border-color: var(--accent-color);
+}
+
+.input__icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms var(--transition-timing-function);
+}
+
+.input:focus+.input__icon,
+.input:hover+.input__icon {
+    fill: var(--accent-color);
+}
