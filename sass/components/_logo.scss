@@ -1,6 +1,6 @@
 .logo {
     color: var(--logo-color);
-    font-family: Raleway, Montserrat, sans-serif;
+    font-family: var(--raleway-font), Montserrat, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -18,7 +18,7 @@
 
 .footer__logo {
     color: var(--main-theme-color);
-    font-family: Raleway, Montserrat, sans-serif;
+    font-family: var(--raleway-font), Montserrat;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.17x;
