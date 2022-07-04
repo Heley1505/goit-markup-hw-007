@@ -24,7 +24,10 @@
     background-color: var(--accent-color);
     border: transparent;
 }
-
+.check:hover+.check__view,
+.check:focus+.check__view {
+    border: 2px solid var(--accent-color);
+}
 
 .policy-link {
     border-bottom: 1px solid var(--accent-color);
