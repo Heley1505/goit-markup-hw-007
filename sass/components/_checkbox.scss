@@ -18,6 +18,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: border 250ms var(--transition-timing-function);
 }
 
 .check:checked+.check__view {

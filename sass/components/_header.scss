@@ -1,9 +1,10 @@
-header {
+.header {
     border-bottom: 1px solid #ECECEC;
     background-color: var(--main-theme-color);
 }
 
-.header {
+.header__container {
+    
     display: flex;
     direction: row;
     align-items: center;
