@@ -1,17 +1,5 @@
-.brand {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    &__item {
-        width: 170px;
-
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
-    }
-
-    &__link {
+.brand__link {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -33,11 +21,9 @@
             fill: var(--accent-color);
         }
     }
-
-    &-icon {
+.brand-icon {
         fill: var(--client-link-bg-color);
         transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
     }
-}

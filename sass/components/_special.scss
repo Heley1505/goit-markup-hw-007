@@ -1,13 +1,12 @@
 .special {
-    background-color: var(--main-theme-color);
-    display: flex;
+    background-color: var(--main-theme-color);}
 
-    &__title {
+.special__title {
         color: var(--title-text-color);
         margin-bottom: 10px;
     }
 
-    &__info {
+.special__info {
         color: var(--primary-text-color);
         font-family: 'Roboto';
         font-style: normal;
@@ -16,15 +15,7 @@
         line-height: 1.7;
     }
 
-    &__item {
-        width: 270px;
-
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
-    }
-
-    &__content {
+.special__content {
         width: 270px;
         height: 120px;
         border-radius: 4px;
@@ -34,4 +25,3 @@
         justify-content: center;
         align-items: center;
     }
-}

@@ -1,13 +1,12 @@
-.services {
-    &__title {
+.services__title {
         margin-bottom: 50px;
     }
 
-    &__picture {
+.services__picture {
         position: relative;
     }
 
-    &__info {
+ .services__info {
         width: 370px;
         height: 70px;
         background: rgba(47, 48, 58, 0.8);
@@ -22,15 +21,9 @@
         transform: translate();
     }
 
-    &__list {
-        display: flex;
-    }
 
-    &__item:not(:last-child) {
-        margin-right: 30px;
-    }
 
-    &__aftertitle {
+.services__aftertitle {
         color: #FFFFFF;
         font-weight: 700;
         font-size: 14px;
@@ -39,4 +32,3 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
     }
-}
