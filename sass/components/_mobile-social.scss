@@ -1,0 +1,26 @@
+.mobile-social {
+    display: none;
+
+    @include mobile-only {
+        flex-wrap: wrap;
+    }
+
+}
+.mobile-social-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+    cursor: pointer;
+}
+.mobile-social-link {
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.mobile-social-link:not(:last-child){
+   border-right: 1px solid #21212133;
+}

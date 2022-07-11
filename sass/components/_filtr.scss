@@ -1,13 +1,21 @@
+
 .filtr__list {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
+    column-gap: 8px;
     margin-top: 0;
     margin-bottom: 50px;
+
+    @include mobile-only {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+        row-gap: 15px;
+    }
 }
 
 .filtr__item {
-    display: block;
- &:not(:last-child) {
-        margin-right: 8px;
-    }
-}
+                justify-content: center;
+                margin-top: 0; }
+

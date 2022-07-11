@@ -1,5 +1,10 @@
 address {
     font-style: normal;
+    text-align: center;
+
+    @include desktop{
+        text-align: left;
+    }
 }
 
 .adress__street {
@@ -10,4 +15,5 @@ address {
     margin-bottom: 9px;
     display: block;
 }
+
 

@@ -2,6 +2,14 @@
 .projects__item {
         border-bottom: 1px var(--project-conteiner-color);
         cursor: pointer;
+        @include tablet {
+               display: flex;
+                flex-basis: calc((100% - 30px)/2);
+            }
+        @include desktop{
+            display: flex;
+                flex-basis: calc((100% - 2 * 30px)/3);
+        }
     }
 .projects__link {
             display: inline-block;

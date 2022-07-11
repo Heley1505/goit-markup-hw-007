@@ -21,8 +21,14 @@
     font-family: var(--raleway-font), Montserrat;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.17x;
+    line-height: 1.17;
     text-decoration: none;
+     text-align: center;
     display: block;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 20px;
+    @include desktop{
+        text-align: left;
+    }
 }

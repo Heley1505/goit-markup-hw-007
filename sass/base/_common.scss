@@ -5,16 +5,27 @@ body {
     font-family: var(--roboto-font) ;
     font-style: normal;
 }
+body.modal-open{
+    overflow: hidden;
+}
 .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include desktop{
     padding-top: 94px;
     padding-bottom: 94px;
+    }
 }
 .section-title {
     color: var(--title-text-color);
-    font-size: 36px;
+    font-size: 33px;
     line-height: 1.17;
+    letter-spacing: 0.03em;
     text-align: center;
-}
+    @include desktop{
+    font-size: 36px;
+    line-height: 1.17;}
+                }
 
 .after-title{
         color: var(--title-text-color);

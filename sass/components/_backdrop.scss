@@ -10,6 +10,10 @@
     &is-hidden .modal {
         transform: translate(-50%, -50%) scale(0) rotate(180deg);
     }
+@include mobile-only{
+    padding: 93px 15px 94px;
+    overflow-y: scroll;
+}
 }
 
 

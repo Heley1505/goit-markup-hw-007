@@ -3,7 +3,10 @@
     padding-bottom: 94px;}
 
 .clients__title {
+        margin-bottom: 30px;
+        @include desktop {
         margin-bottom: 50px;
+            }
     }
 
 

@@ -1,13 +1,33 @@
 footer {
     background-color: var(--footer-bg-color);
-    padding-top: 60px;
-    padding-bottom: 60px;}
-        .footer {
-            display: flex;
-            align-items: baseline;
-    
-            &__adress {
-                margin-right: 70px;
-            }
-        }
+     padding-top: 60px;
+     padding-bottom: 60px;
+     }
 
+    .footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        @include desktop {
+            flex-direction: row;
+            align-items: baseline;}}
+    
+.footer__adress {
+    @include desktop{
+                margin-right: 70px;}
+            }
+.footer-tab {
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+     flex-direction: row;
+     align-items: baseline;
+     justify-content: space-around;
+     margin-right: auto;
+     margin-left: auto;
+     margin-bottom: 60px;
+    }
+    @include desktop{
+    flex-direction: row;
+    }
+}

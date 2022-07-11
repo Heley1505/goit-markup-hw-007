@@ -8,7 +8,7 @@
     padding: 6px 22px;
     border-radius: 4px;
     border: transparent;
-    display: inline-block;
+    display: flex;
     min-width: 103px;
     height: 38px;
     letter-spacing: 0.03em;
@@ -19,9 +19,11 @@
 &:hover {
     color: var(--main-theme-color);
     background-color: var(--accent-color);
-    box-shadow: 0px 4px 4px 0px #00000040;
+    box-shadow: 0px 4px 4px 0px #00000040;}
+        
 }
-}
+
+
 .main-button {
     cursor: pointer;
     color: var(--main-theme-color);
@@ -31,11 +33,13 @@
     line-height: 1.9;
     align-items: center;
     text-align: center;
-    display: inline-block;
+    display: flex;
     border-radius: 4px;
     padding: 10px 32px;
     min-width: 200px;
     height: 50px;
+    margin-right: auto;
+    margin-left: auto;
     border: transparent;
     transition-property: background-color;
     transition-duration: 250ms;
@@ -45,4 +49,7 @@
     &:hover {
         background-color: var(--bottom-focuse-color);
     }
+
 }
+
+
