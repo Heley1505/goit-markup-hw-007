@@ -1,8 +1,19 @@
+.members{
+    @include mobile-only{
+        display: block;
+        
+    }
+}
 .members__content {
         background-color: var(--main-theme-color);
         box-shadow: 0px 4px 4px 0px #00000040;
         border-radius: 0px 0px 4px 4px;
         max-width: 100%;
+@include mobile-only{
+&:not(:last-child){
+    margin-bottom: 30px;
+}
+}
     }
 .members__content{
     @include tablet-only{

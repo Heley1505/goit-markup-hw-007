@@ -75,6 +75,9 @@
             width: 358px;
         }
 }
+.singup__icon {
+    margin-left: 10px;
+}
 .signup__button {
     cursor: pointer;
     color: var(--main-theme-color);
@@ -83,7 +86,8 @@
     font-weight: 200px;
     font-size: 16px;
     line-height: 1.9;
-    min-width: 200px;
+    width: 100%;
+    max-width: 200px;
     height: 50px;
     border-radius: 4px;
     border: transparent;
@@ -105,8 +109,6 @@
     @include desktop{
         margin-top: 36px
     }}
-.signup__icon {
-            margin-left: 10px;
-        }
+
 
 

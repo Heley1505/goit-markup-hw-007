@@ -21,28 +21,29 @@
     <header class="header">
       <div class="mobile-menu" data-menu>
         <div class="container header__container">
-          <div class="navigation-container"></div>
           <a href="" class="logo header__logo"><span class="logo__part">Web</span>Studio</a>
-          <nav>
-            <ul class="navigation list">
-              <li class="navigation__item">
-                <a href="" class="navigation__link current">Студия</a>
-              </li>
-              <li class="navigation__item">
-                <a href="./portfolio.html" class="navigation__link">Портфолио</a>
-              </li>
-              <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
-            </ul>
-          </nav>
-          <button type="button" class="mobile-menu-button" data-menu-button>
-            <svg class="mobile-menu-icon" width="40" height="40">
+          <div class="navigation-container">
+            <nav>
+              <ul class="navigation list">
+                <li class="navigation__item">
+                  <a href="" class="navigation__link current">Студия</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="./portfolio.html" class="navigation__link">Портфолио</a>
+                </li>
+                <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <button type="button" class="mobile-menu__button" data-menu-button>
+            <svg class="mobile-menu__icon" width="40" height="40">
               <use href="./images/icons.svg#icon-burger-menu"></use>
             </svg>
-            <svg class="mobile-menu-close" width="40" height="40">
+            <svg class="mobile-menu__close" width="40" height="40">
               <use href="/images/icons.svg#icon-burger-close-1"></use>
             </svg>
           </button>
-          <div class="bottom-container">
+          <div class="connect-container">
             <ul class="connect header__connect list">
               <li class="connect__mail">
                 <a href="mailto:info@devstudio.com" class="connect__link"
@@ -60,23 +61,23 @@
               </li>
             </ul>
             <ul class="mobile-social list">
-              <li>
-                <a class="mobile-social-link" href="https://www.instagram.com/accounts/login"
+              <li class="mobile-social__item">
+                <a class="mobile-social__link" href="https://www.instagram.com/accounts/login"
                   >Instagram</a
                 >
               </li>
-              <li>
+              <li class="mobile-social__item">
                 <a
-                  class="mobile-social-link"
+                  class="mobile-social__link"
                   href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicnUifQ%3D%3D%22%7D"
                   >Twitter</a
                 >
               </li>
-              <li>
-                <a class="mobile-social-link" href="https://www.facebook.com/">Facebook</a>
+              <li class="mobile-social__item">
+                <a class="mobile-social__link" href="https://www.facebook.com/">Facebook</a>
               </li>
-              <li>
-                <a class="mobile-social-link" href="https://www.linkedin.com/login">LinkedIn</a>
+              <li class="mobile-social__item">
+                <a class="mobile-social__link" href="https://www.linkedin.com/login">LinkedIn</a>
               </li>
             </ul>
           </div>
@@ -101,7 +102,7 @@
             Специфика и особенности работы компании
           </h2>
           <ul class="special card-set list">
-            <li class="special__item card-item-middle">
+            <li class="special__item">
               <div class="special__content">
                 <svg class="special__icon" width="70px" height="70px">
                   <use href="images/icons.svg#icon-antenna-1-1"></use>
@@ -114,7 +115,7 @@
                 </p>
               </div>
             </li>
-            <li class="special__item card-item-middle">
+            <li class="special__item">
               <div class="special__content">
                 <svg class="special__icon" width="70px" height="70px">
                   <use href="./images/icons.svg#icon-clock-1-1"></use>
@@ -125,7 +126,7 @@
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="special__item card-item-middle">
+            <li class="special__item">
               <div class="special__content">
                 <svg class="special__icon" width="70px" height="70px">
                   <use href="./images/icons.svg#icon-diagram-1-1"></use>
@@ -136,7 +137,7 @@
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="special__item card-item-middle">
+            <li class="special__item">
               <div class="special__content">
                 <svg class="special__icon" width="70px" height="70px">
                   <use href="./images/icons.svg#icon-astronaut-1-1"></use>
@@ -157,7 +158,12 @@
           <ul class="services__list card-set list">
             <li class="services__item card-item">
               <div class="services__picture">
-                <img src="./images/box1.jpg" alt="Руки на клавиатуре" width="370" />
+                <img
+                  srcset="./images/box1.jpg 1x, ./images/box1@2x.jpg 2x"
+                  src="./images/box1.jpg"
+                  alt="Руки на клавиатуре"
+                  width="370"
+                />
                 <div class="services__info">
                   <h3 class="services__aftertitle">Десктопные приложения</h3>
                 </div>
@@ -165,7 +171,12 @@
             </li>
             <li class="services__item card-item">
               <div class="services__picture">
-                <img src="./images/box2.jpg" alt="Смартфон и ноутбук" width="370" />
+                <img
+                  srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x"
+                  src="./images/box2.jpg"
+                  alt="Смартфон и ноутбук"
+                  width="370"
+                />
                 <div class="services__info">
                   <h3 class="services__aftertitle">Мобильные приложения</h3>
                 </div>
@@ -173,7 +184,12 @@
             </li>
             <li class="services__item card-item">
               <div class="services__picture">
-                <img src="./images/box3.jpg" alt="Палитра цветов" width="370" />
+                <img
+                  srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x"
+                  src="./images/box3.jpg"
+                  alt="Палитра цветов"
+                  width="370"
+                />
                 <div class="services__info">
                   <h3 class="services__aftertitle">Дизайнерские решения</h3>
                 </div>
@@ -188,7 +204,14 @@
           <h2 class="team__title section-title">Наша команда</h2>
           <ul class="members card-set list">
             <li class="members__content card-item-middle">
-              <img src="./images/pd.jpg" alt="Мужчина в очках" width="270" />
+              <picture>
+                <source
+                  srcset="./images/pdweb.webp 1x, ./images/pdweb2x.webp 2x"
+                  type="image/webp"
+                />
+                <source srcset="./images/pd.jpg 1x, ./images/pd2x.jpg 2x" type="image/jpeg" />
+                <img src="./images/pd.jpg" alt="Мужчина в очках" width="450" height="460" />
+              </picture>
               <div class="members__info">
                 <h3 class="members__name">Игорь Демьяненко</h3>
                 <p lang="en" class="members__position">Product Designer</p>
@@ -233,7 +256,14 @@
               </div>
             </li>
             <li class="members__content card-item-middle">
-              <img src="./images/fe.jpg" alt="Женщина в очках" width="270" />
+              <picture>
+                <source
+                  srcset="./images/feweb.webp 1x, ./images/feweb2x.webp 2x"
+                  type="image/webp"
+                />
+                <source srcset="./images/fe.jpg 1x, ./images/fe2x.jpg 2x" type="image/jpeg" />
+                <img src="./images/fe.jpg" alt="Женщина в очках" width="450" height="460" />
+              </picture>
               <div class="members__info">
                 <h3 class="members__name">Ольга Репина</h3>
                 <p lang="en" class="members__position">Frontend Developer</p>
@@ -278,7 +308,11 @@
               </div>
             </li>
             <li class="members__content card-item-middle">
-              <img src="./images/m.jpg" alt="Мужчина в голубой рубашке" width="270" />
+              <picture>
+                <source srcset="./images/mweb.webp 1x, ./images/mweb2x.webp 2x" type="image/webp" />
+                <source srcset="./images/m.jpg 1x, ./images/m2x.jpg 2x" type="image/jpeg" />
+                <img src="./images/m.jpg" alt="Мужчина в голубой рубашке" width="450" height="460"
+              /></picture>
               <div class="members__info">
                 <h3 class="members__name">Николай Тарасов</h3>
                 <p lang="en" class="members__position">Marketing</p>
@@ -323,7 +357,19 @@
               </div>
             </li>
             <li class="members__content card-item-middle">
-              <img src="./images/ui.jpg" alt="Мужчина в черной футболке" width="270" />
+              <picture>
+                <source
+                  srcset="./images/uiweb.webp 1x, ./images/uiweb2x.webp 2x"
+                  type="image/webp"
+                />
+                <source srcset="./images/ui.jpg 1x, ./images/ui2x.jpg 2x" type="image/jpeg" />
+                <img
+                  src="./images/ui.jpg"
+                  alt="Мужчина в черной футболке"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="members__info">
                 <h3 class="members__name">Михаил Ермаков</h3>
                 <p lang="en" class="members__position">UI Designer</p>

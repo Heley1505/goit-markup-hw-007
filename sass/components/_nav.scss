@@ -4,7 +4,8 @@
     flex-direction: column;
     }
     @include tablet{
-    display: flex;}}
+    display: flex;
+}}
 
 .navigation__item:not(:last-child) {
         margin-right: 50px;

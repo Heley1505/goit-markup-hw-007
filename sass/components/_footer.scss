@@ -8,6 +8,7 @@ footer {
         display: flex;
         align-items: center;
         flex-direction: column;
+        row-gap: 60px;
         @include desktop {
             flex-direction: row;
             align-items: baseline;}}
@@ -19,13 +20,13 @@ footer {
 .footer-tab {
     display: flex;
     flex-direction: column;
+    row-gap: 60px;
     @include tablet {
      flex-direction: row;
      align-items: baseline;
      justify-content: space-around;
      margin-right: auto;
      margin-left: auto;
-     margin-bottom: 60px;
     }
     @include desktop{
     flex-direction: row;
