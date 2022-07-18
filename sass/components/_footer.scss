@@ -24,9 +24,10 @@ footer {
     @include tablet {
      flex-direction: row;
      align-items: baseline;
+     max-width: 603px;
+     width: 100%;
      justify-content: space-around;
-     margin-right: auto;
-     margin-left: auto;
+   
     }
     @include desktop{
     flex-direction: row;

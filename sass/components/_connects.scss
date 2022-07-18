@@ -1,6 +1,13 @@
-.header__connect{
+.connect-container{
        display: none;
+       @media screen and (min-width:768px) {
+           display: block;   
+       }
+}
+
+.header__connect{
        @media screen and (max-width:767px) {
+              display: flex;
               flex-direction: column-reverse;
               align-items: flex-start;
               row-gap: 32px;
