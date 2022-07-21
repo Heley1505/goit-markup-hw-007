@@ -2,28 +2,28 @@
 .projects__item {
         border-bottom: 1px var(--project-conteiner-color);
         cursor: pointer;
-        @include tablet {
-               display: flex;
-                flex-basis: calc((100% - 30px)/2);
+        @media screen and (min-width:768px) {
+        display: flex;
+        flex-basis: calc((100% - 30px)/2);
             }
-        @include desktop{
-            display: flex;
-                flex-basis: calc((100% - 2 * 30px)/3);
+        @media screen and (min-width:1200px){
+        display: flex;
+        flex-basis: calc((100% - 2 * 30px)/3);
         }
     }
 .projects__link {
-            display: inline-block;
-            border-bottom: 1px var(--project-conteiner-color);
-            cursor: pointer;
-            transition-property: box-shadow;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            &:hover,
-            &:focus {
-                box-shadow: 0px 4px 4px 0px #00000040;
-            }
-            &:hover .upper-layer {
-                    opacity: 1;
-                    transform: translateY(0);
+        display: inline-block;
+        border-bottom: 1px var(--project-conteiner-color);
+        cursor: pointer;
+        transition-property: box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            box-shadow: 0px 4px 4px 0px #00000040;
+        }
+        &:hover .upper-layer {
+        opacity: 1;
+        transform: translateY(0);
                 }
  }    

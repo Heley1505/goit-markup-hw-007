@@ -1,5 +1,5 @@
 .members{
-    @include mobile-only{
+    @media screen and (max-width:767px){
         display: block;
         
     }
@@ -9,16 +9,21 @@
         box-shadow: 0px 4px 4px 0px #00000040;
         border-radius: 0px 0px 4px 4px;
         max-width: 100%;
-@include mobile-only{
+    @media screen and (max-width:767px){
 &:not(:last-child){
     margin-bottom: 30px;
 }
 }
     }
 .members__content{
-    @include tablet-only{
+    @media screen and (min-width :768px) and (max-width:1199px){
     flex-basis: calc((100% - 1 * 30px)/2);
     }
+    @media screen and (min-width :1200px){
+    flex-basis: calc((100% - 3 * 30px)/4);
+    }
+
+
 }
 
 .members__info {

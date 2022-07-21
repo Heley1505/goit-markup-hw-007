@@ -1,7 +1,7 @@
 .special {
     background-color: var(--main-theme-color);
     display: block;
-    @include tablet {
+    @media screen and (min-width:768px) {
             display: flex;
         }
 }
@@ -9,17 +9,17 @@
 .special__title {
         color: var(--title-text-color);
         margin-bottom: 10px;
-        @include mobile-only{
+    @media screen and (max-width:767px){
             text-align: center;
         }
     }
 .special__item{
     @media screen and (max-width: 767px){
         margin-bottom: 30px;}
-    @include tablet{
+    @media screen and (min-width:768px){
         flex-basis: calc((100% - ((2 - 1)* var(--card-gap)))/2);
     }
-    @include desktop{
+    @media screen and (min-width:1200px){
         flex-basis: calc((100% - ((4 - 1)* var(--card-gap)))/4);
     }
 }
@@ -43,10 +43,10 @@
         margin-bottom: 30px;
         justify-content: center;
         align-items: center;
-        @include tablet{
+        @media screen and (min-width:768px){
             width: 345px;
         }
-        @include desktop {
+        @media screen and (min-width:1200px) {
             width:270px ;
         }
     }

@@ -1,9 +1,6 @@
 .navigation {
     display: none;
-    @media screen and (max-width:767px){
-    flex-direction: column;
-    }
-    @include tablet{
+    @media screen and (min-width:768px){
     display: flex;
 }}
 
@@ -22,7 +19,7 @@
         padding-bottom: 32px;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         position: relative;
-    @include tablet{
+    @media screen and (min-width:768px){
         font-size: 14px;
         line-height: 1.14;
     }
@@ -34,8 +31,7 @@
 
 .navigation__link.current {
             color: var(--accent-color);}
-@media screen and (min-width:768px){
-    .navigation__link.current::after {
+.navigation__link.current::after {
                 content: '';
                 position: absolute;
                 display: block;
@@ -51,4 +47,4 @@
 .navigation__link.current:hover:after {
                     transform: scaleX(1);
                 }
-                                }
+

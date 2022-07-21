@@ -9,11 +9,11 @@
 
 }
 
-.card-item-middle {
+// .card-item-middle {
     
-    flex-basis: calc((100% - ((var(--card-item-middle) - 1)* var(--card-gap)))/var(--card-item-middle));
-}
+//     flex-basis: calc((100% - ((var(--card-item-middle) - 1)* var(--card-gap)))/var(--card-item-middle));
+// }
 
-.card-item-long {
-    flex-basis: calc((100% - ((var(--card-item-long) - 1)* var(--card-gap)))/var(--card-item-long));
-}
+// .card-item-long {
+//     flex-basis: calc((100% - ((var(--card-item-long) - 1)* var(--card-gap)))/var(--card-item-long));
+// }

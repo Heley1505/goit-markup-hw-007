@@ -2,7 +2,7 @@
     display: flex;
     width: auto;
     max-width: 570;
-@include desktop{
+@media screen and (min-width:1200px){
         width: 570px;
         margin-left: auto;
     }
@@ -11,7 +11,7 @@
 .application__subtitle {
         margin-bottom: 20px;
         text-align: center;
-        @include desktop{
+@media screen and (min-width:1200px){
         text-align: left;}
     }
 
@@ -22,10 +22,9 @@
         margin-right: auto;
         margin-left: auto;
         @media screen and (max-width:1199px) {
-          flex-direction: column;
-        @media screen and (min-width:1200px) {
-            align-items: baseline;
-            
+        flex-direction: column;
+        @media screen and (min-width:1200px){
+        align-items: baseline;
         }
                 }
     }
@@ -50,7 +49,7 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    @include desktop{
+    @media screen and (min-width:1200px){
         margin-right: 12px;
     }
     &:focus,
@@ -65,18 +64,15 @@
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
     }
-        @include mobile {
+     @media screen and (min-width:480px) {
             width: 450px;
          }
-        @include tablet {
+     @media screen and (min-width:768px){
             width: 450px;
         }
-        @include desktop {
+     @media screen and (min-width:1200px){
             width: 358px;
         }
-}
-.singup__icon {
-    margin-left: 10px;
 }
 .signup__button {
     cursor: pointer;
@@ -106,9 +102,12 @@
     &:hover {
         background-color: var(--bottom-focuse-color);
     }
-    @include desktop{
+    @media screen and (min-width:1200px){
         margin-top: 36px
     }}
 
-
+.singup__icon{
+    display: inline-block;
+    margin-left: 10px;
+}
 

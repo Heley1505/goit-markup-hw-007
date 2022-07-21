@@ -10,7 +10,7 @@
     &is-hidden .modal {
         transform: translate(-50%, -50%) scale(0) rotate(180deg);
     }
-@include mobile-only{
+@media screen and (max-width:767px){
     padding: 93px 15px 94px;
     overflow-y: scroll;
 }
