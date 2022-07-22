@@ -10,12 +10,12 @@
     background-size: cover;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heromob.jpg);
     @include retina {
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heromob2x.jpg);
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heromob@2x.jpg);
     }
     @media screen and (min-width:768px){
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herotab.jpg);
         @include retina { 
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herotab2x.jpg);
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herotab@2x.jpg);
         }
     }
    @media screen and (min-width:1200px){
@@ -24,7 +24,7 @@
         padding-bottom: 200px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herodesk.jpg);
         @include retina {
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herodesk2x.jpg);
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herodesk@2x.jpg);
     }
 }
 }
