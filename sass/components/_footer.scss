@@ -4,7 +4,7 @@ footer {
      padding-bottom: 60px;
      }
 
-    .footer {
+.footer {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -21,7 +21,7 @@ footer {
     display: flex;
     flex-direction: column;
     row-gap: 60px;
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:768px) and (max-width:1199px) {
      flex-direction: row;
      align-items: baseline;
      max-width: 603px;
@@ -31,5 +31,6 @@ footer {
     }
     @media screen and (min-width:1200px){
     flex-direction: row;
+    align-items: baseline;
     }
 }
