@@ -19,43 +19,19 @@
   <body>
     <!--Шапка-->
     <header class="header">
-      <!-- <div class="mobile-menu" data-menu> -->
       <div class="container header__container">
         <a href="" class="logo header__logo"><span class="logo__part">Web</span>Studio</a>
-        <!-- <button
-          type="button"
-          class="menu-button"
-          aria-expanded="false"
-          aria-controls="menu-container"
-          data-menu-button
-        >
-          <svg width="40" height="40" aria-label="переключатель мобильного меню">
-            <use class="icon-cross" href="./images/icons.svg#icon-burger-close-1"></use>
-            <use class="icon-menu" href="./images/icons.svg#icon-burger-menu"></use>
-          </svg>
-        </button> -->
-        <!-- <div class="menu-container" id="menu-container" data-menu> -->
-        <div class="navigation-container">
-          <nav>
-            <ul class="navigation list">
-              <li class="navigation__item">
-                <a href="" class="navigation__link current">Студия</a>
-              </li>
-              <li class="navigation__item">
-                <a href="./portfolio.html" class="navigation__link">Портфолио</a>
-              </li>
-              <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
-            </ul>
-          </nav>
-        </div>
-        <!-- <button type="button" class="mobile-menu__button" data-menu-button>
-            <svg class="mobile-menu__icon" width="40" height="40">
-              <use href="./images/icons.svg#icon-burger-menu"></use>
-            </svg>
-            <svg class="mobile-menu__close" width="40" height="40">
-              <use href="./images/icons.svg#icon-burger-close-1"></use>
-            </svg>
-          </button> -->
+        <nav>
+          <ul class="navigation list">
+            <li class="navigation__item">
+              <a href="" class="navigation__link current">Студия</a>
+            </li>
+            <li class="navigation__item">
+              <a href="./portfolio.html" class="navigation__link">Портфолио</a>
+            </li>
+            <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
+          </ul>
+        </nav>
         <div class="connect-container">
           <ul class="connect header__connect list">
             <li class="connect__mail">
@@ -73,29 +49,8 @@
               >
             </li>
           </ul>
-          <!-- <ul class="mobile-social list">
-            <li class="mobile-social__item">
-              <a class="mobile-social__link" href="https://www.instagram.com/accounts/login"
-                >Instagram</a
-              >
-            </li>
-            <li class="mobile-social__item">
-              <a
-                class="mobile-social__link"
-                href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicnUifQ%3D%3D%22%7D"
-                >Twitter</a
-              >
-            </li>
-            <li class="mobile-social__item">
-              <a class="mobile-social__link" href="https://www.facebook.com/">Facebook</a>
-            </li>
-            <li class="mobile-social__item">
-              <a class="mobile-social__link" href="https://www.linkedin.com/login">LinkedIn</a>
-            </li>
-          </ul> -->
+          </ul> 
         </div>
-        <!-- </div> -->
-        <!-- </div> -->
         <button type="button" class="menu-open">
           <svg class="menu-open__icon" width="40" height="40">
             <use href="./images/icons.svg#icon-burger-menu"></use>
@@ -257,10 +212,29 @@
             <li class="members__content">
               <picture>
                 <source
+                  media="media=(min-width: 1200px)"
+                  srcset="./images/pdmedweb.webp 1x, ./images/pdmedweb@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source 
+                media="(min-width: 1200px)"
+                srcset="./images/pdlar.jpg 1x, ./images/pdlar@2x.jpg 2x" type="image/jpeg" />
+                <source
+                  media="media=(min-width: 768px)"
+                  srcset="./images/plarweb.webp 1x, ./images/pdmedlar@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source 
+                media="(min-width: 768px)"
+                srcset="./images/pdmed.jpg 1x, ./images/pdmed@2x.jpg 2x" type="image/jpeg" />
+                <source
+                  media="media=(max-width: 767px)"
                   srcset="./images/pdweb.webp 1x, ./images/pdweb@2x.webp 2x"
                   type="image/webp"
                 />
-                <source srcset="./images/pd.jpg 1x, ./images/pd@2x.jpg 2x" type="image/jpeg" />
+                <source 
+                media="(max-width: 767px)"
+                srcset="./images/pd.jpg 1x, ./images/pd@2x.jpg 2x" type="image/jpeg" />
                 <img src="./images/pd.jpg" alt="Мужчина в очках" width="450" height="460" />
               </picture>
               <div class="members__info">
@@ -309,10 +283,30 @@
             <li class="members__content">
               <picture>
                 <source
+                  media="media=(min-width: 1200px)"
+                  srcset="./images/felarweb.webp 1x, ./images/felarweb@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source 
+                media="(min-width: 1200px)"
+                srcset="./images/felar.jpg 1x, ./images/felar@2x.jpg 2x" type="image/jpeg" />
+                <source
+                  media="media=(min-width: 768px)"
+                  srcset="./images/femedweb.webp 1x, ./images/femedweb@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source 
+                media="(min-width: 768px)"
+                srcset="./images/femed.jpg 1x, ./images/femed@2x.jpg 2x" type="image/jpeg" />
+                <source
+                  media="media=(max-width: 767px)"
                   srcset="./images/feweb.webp 1x, ./images/feweb@2x.webp 2x"
                   type="image/webp"
                 />
-                <source srcset="./images/fe.jpg 1x, ./images/fe@2x.jpg 2x" type="image/jpeg" />
+                <source 
+                media="media=(max-width: 767px)"
+                srcset="./images/fe.jpg 1x, ./images/fe@2x.jpg 2x" 
+                type="image/jpeg" />
                 <img src="./images/fe.jpg" alt="Женщина в очках" width="450" height="460" />
               </picture>
               <div class="members__info">
@@ -360,10 +354,29 @@
             </li>
             <li class="members__content">
               <picture>
+                 <source
+                  media="media=(min-width: 1200px)"
+                  srcset="./images/mlarweb.webp 1x, ./images/mlarweb@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source 
+                media="(min-width: 1200px)"
+                srcset="./images/mlar.jpg 1x, ./images/mlar@2x.jpg 2x" type="image/jpeg" />
                 <source
+                  media="media=(min-width: 768px)"
+                  srcset="./images/mmedweb.webp 1x, ./images/mmedweb@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source 
+                media="(min-width: 768px)"
+                srcset="./images/mmed.jpg 1x, ./images/mmed@2x.jpg 2x" type="image/jpeg" />
+                <source
+                  media="media=(max-width: 767px)"
                   srcset="./images/mweb.webp 1x, ./images/mweb@2x.webp 2x"
-                  type="image/webp" />
-                <source srcset="./images/m.jpg 1x, ./images/m@2x.jpg 2x" type="image/jpeg" />
+                  type="image/webp"/>
+                <source
+                 media="media=(max-width: 767px)"
+                 srcset="./images/m.jpg 1x, ./images/m@2x.jpg 2x" type="image/jpeg" />
                 <img src="./images/m.jpg" alt="Мужчина в голубой рубашке" width="450" height="460"
               /></picture>
               <div class="members__info">
@@ -412,10 +425,29 @@
             <li class="members__content">
               <picture>
                 <source
+                  media="media=(min-width: 1200px)"
+                  srcset="./images/uilarweb.webp 1x, ./images/uilarweb@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source 
+                media="(min-width: 1200px)"
+                srcset="./images/uilar.jpg 1x, ./images/uilar@2x.jpg 2x" type="image/jpeg" />
+                <source
+                  media="media=(min-width: 768px)"
+                  srcset="./images/uimedweb.webp 1x, ./images/uimedweb@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source 
+                media="(min-width: 768px)"
+                srcset="./images/uimed.jpg 1x, ./images/uimed@2x.jpg 2x" type="image/jpeg" />
+                <source
+                  media="media=(max-width: 767px)"
                   srcset="./images/uiweb.webp 1x, ./images/uiweb@2x.webp 2x"
                   type="image/webp"
                 />
-                <source srcset="./images/ui.jpg 1x, ./images/ui@2x.jpg 2x" type="image/jpeg" />
+                <source
+                 media="media=(max-width: 767px)"
+                 srcset="./images/ui.jpg 1x, ./images/ui@2x.jpg 2x" type="image/jpeg" />
                 <img
                   src="./images/ui.jpg"
                   alt="Мужчина в черной футболке"
@@ -588,7 +620,8 @@
               <input type="email" name="input-mail" class="signup" placeholder="E-mail"
             /></label>
             <button type="submit" class="signup__button">
-              Подписаться<svg class="singup__icon" width="24" height="24">
+              Подписаться
+              <svg class="singup__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-icon-send-3"></use>
               </svg>
             </button>
@@ -599,7 +632,7 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close class="modal__close-btn">
-          <svg class="modal__close-icon">
+          <svg class="modal__close-icon" width="18" height="18">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>

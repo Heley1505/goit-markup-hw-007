@@ -3,6 +3,9 @@
        @media screen and (min-width:768px) {
            display: block;   
        }
+       @media screen and (min-width:1200px){
+              margin-left: auto;
+       }
 }
 
 .header__connect{
@@ -42,6 +45,7 @@
         margin-right: 10px;
         fill: #757575;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     }
 
  .connect__mail {

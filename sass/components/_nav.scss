@@ -25,7 +25,8 @@
     }
     }
 
-.navigation__link:hover {
+.navigation__link:hover,
+.navigation__link:focus{
             color: var(--accent-color);
         }
 
@@ -44,7 +45,8 @@
                 transform: scaleX(0);
                 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
-.navigation__link.current:hover:after {
+.navigation__link.current:hover:after,
+.navigation__link.current:focus:after {
                     transform: scaleX(1);
                 }
 
