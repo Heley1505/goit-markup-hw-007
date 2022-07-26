@@ -661,12 +661,12 @@ body.modal-open {
 
 @media screen and (min-width: 768px) {
   .special__item {
-    flex-basis: calc((100% - 1 * var(--card-gap)) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .special__item {
-    flex-basis: calc((100% - 3 * var(--card-gap)) / 4);
+    flex-basis: calc((100% - 90px) / 4);
   }
 }
 
@@ -687,6 +687,7 @@ body.modal-open {
 }
 
 .special__content {
+  width: auto;
   height: 120px;
   border-radius: 4px;
   display: flex;
@@ -694,16 +695,6 @@ body.modal-open {
   margin-bottom: 30px;
   justify-content: center;
   align-items: center;
-}
-@media screen and (min-width: 768px) {
-  .special__content {
-    width: 345px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .special__content {
-    width: 270px;
-  }
 }
 
 @media screen and (max-width: 1199px) {
